@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  // Display in 3 columns and 1 depending on size
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+  gap: 40px;
+  margin: 37px 0;
+  width: 100%;
+}

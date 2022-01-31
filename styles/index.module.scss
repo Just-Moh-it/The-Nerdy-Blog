@@ -1,0 +1,40 @@
+.featuredPost {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+  list-style-type: none;
+
+  .left {
+    .imageContainer {
+      width: 651px;
+      height: 403px;
+      left: 184px;
+      top: 374px;
+
+      background: linear-gradient(248.64deg, #b4a7ff 2.97%, #ff948f 97.13%);
+      border-radius: 15px;
+    }
+  }
+
+  .title {
+    margin: 14px 0 20px;
+  }
+
+  .right {
+    flex: 1;
+  }
+}
+.heading {
+  margin: 20px 0 40px;
+}
+.secondaryText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162.5%;
+
+  color: #666666;
+}

@@ -1,0 +1,168 @@
+.container {
+  padding: 0 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.title {
+  margin: 24px 0;
+}
+
+.description {
+  margin: 24px 0 19px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 14px;
+  margin: auto 0 4px;
+}
+
+.infoImageContainer {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background: #c4c4c4;
+}
+
+.infoText {
+  margin: 0;
+}
+
+.thumbnailContainer {
+  width: 100%;
+  min-height: 200px;
+  left: 184px;
+  top: 374px;
+  margin: 20px 0 40px;
+  aspect-ratio: 16 / 9;
+
+  background: linear-gradient(248.64deg, #b4a7ff 2.97%, #ff948f 97.13%);
+  border-radius: 15px;
+}
+
+.content {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 190.5%;
+
+  & * {
+    margin: 20px 0;
+  }
+  /* or 38px */
+
+  color: #666666;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Poppins, sans-serif;
+    color: #000000;
+    margin: 25px 0 20px;
+  }
+
+  h1 {
+    margin: 30px 0 20px;
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  figcaption {
+    opacity: 0.6;
+  }
+
+  a {
+    border-bottom: 4px solid #ff948f;
+  }
+}
+
+.name {
+  font-size: 36px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.code {
+  font-family: monospace;
+  background-color: rgb(242, 242, 242);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.file {
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+.file a {
+  color: inherit;
+}
+
+.file:hover {
+  background: rgba(55, 53, 47, 0.08);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .code {
+    background-color: rgb(15, 8, 28);
+  }
+  .file:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border-radius: 2px;
+  }
+}

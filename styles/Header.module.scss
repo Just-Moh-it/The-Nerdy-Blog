@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: black;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.5s ease-in-out;
+
+  // Fix the header on scroll
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  // Blurred background
+  backdrop-filter: blur(7px);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 117%;
+  /* identical to box height, or 21px */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+  list-style-type: none;
+}
+
+.navItem {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    visibility: hidden;
+    background-color: #f398a2;
+  }
+  &.active {
+    &::after {
+      visibility: visible;
+    }
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 117%;
+  /* identical to box height, or 21px */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
