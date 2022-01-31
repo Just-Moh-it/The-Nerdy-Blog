@@ -1,4 +1,5 @@
-import styles from './Text.module.scss'
+import styles from "./Text.module.scss";
+import { v4 as uuid } from "uuid";
 
 const Text = ({ text }) => {
   if (!text) {
@@ -18,6 +19,7 @@ const Text = ({ text }) => {
           strikethrough ? styles.strikethrough : "",
           underline ? styles.underline : "",
         ].join(" ")}
+        key={value.id || uuid()}
         style={color !== "default" ? { color } : {}}
       >
         {text.link ? <a href={text.link.url}>{text.content}</a> : text.content}

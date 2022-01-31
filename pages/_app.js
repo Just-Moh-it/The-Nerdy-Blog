@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/globals.css";
 import Loader from "../components/Loader";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 import styles from "../styles/app.module.scss";
 import Router from "next/router";
 
